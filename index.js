@@ -1,6 +1,7 @@
 const http = require('http');
 
 const hostname = '127.0.0.1';
+const ipAddress = '51.20.8.182';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
@@ -9,6 +10,6 @@ const server = http.createServer((req, res) => {
   res.end('Hello World\n');
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, ipAddress, () => {
+  console.log(`Server running at http://${ipAddress}:${port}/`);
 });
